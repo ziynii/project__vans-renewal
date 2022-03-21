@@ -100,10 +100,36 @@ button {
   color: var(--white-color);
 }
 
+.gnb-item h2:hover {
+  color: var(--red-color);
+}
+
+.gnb-item h2::before {
+  content: '';
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: absolute;
+  bottom: -8px;
+  left: -1px;
+}
+
+.gnb-item h2:hover::before {
+  width: 100%;
+  background-color: #fff;
+}
+
 .header-button {
   font-size: 20px;
   color: var(--white-color);
   background-color: transparent;
+}
+
+.header-button:hover,
+.header-button:active {
+  opacity: 0.7;
 }
 
 .menu-button {
