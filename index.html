@@ -12,11 +12,11 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -83,7 +83,73 @@
       </div>
     </header>
 
-		
+    <!-- 모바일, 타블렛 사이즈에서 carousel -->
+    <div class="main-banner main-banner-slide-md d-xl-none">
+      <div class="slide-list">
+        <div class="slide-item">
+          <img src="./assets/img/m_main01.png" alt="" />
+        </div>
+        <div class="slide-item">
+          <img src="./assets/img/m_main02.png" alt="" />
+        </div>
+        <div class="slide-item">
+          <img src="./assets/img/m_main03.png" alt="" />
+        </div>
+      </div>
+
+      <div class="slide-controls">
+        <button type="button" class="slide-button prev-button">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button type="button" class="slide-button next-button">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- 데스크탑 사이즈에서 carousel -->
+    <div class="main-banner main-banner-slide-xl d-none d-xl-block">
+      <div class="slide-list">
+        <div class="slide-item" id="item01">
+          <img src="./assets/img/main01.png" alt="메인배너 이미지1" />
+          <img
+            class="item01-text-1 animate__bounceInDown"
+            src="./assets/img/bImg01.png"
+            alt="90년대 향수를 그대로"
+          />
+          <img
+            class="item01-text-2 animate__bounceInDown"
+            src="./assets/img/bImg02.png"
+            alt="better together collection"
+          />
+        </div>
+        <div class="slide-item" id="item02">
+          <img src="./assets/img/main02.png" alt="" />
+          <img
+            class="item02-text-1"
+            src="./assets/img/text01.png"
+            alt="90년대 향수를 그대로"
+          />
+          <img
+            class="item02-text-2"
+            src="./assets/img/text02.png"
+            alt="better together collection"
+          />
+        </div>
+        <div class="slide-item" id="item03">
+          <img src="./assets/img/main03.png" alt="" />
+        </div>
+      </div>
+
+      <div class="slide-controls">
+        <button type="button" class="slide-button prev-button">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button type="button" class="slide-button next-button">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
 
     <aside class="sidebar">
       <div class="sidebar-top-menu">
@@ -140,11 +206,11 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script
       src="https://kit.fontawesome.com/02735bbb77.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>

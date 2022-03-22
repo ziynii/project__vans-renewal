@@ -219,7 +219,7 @@ button {
 
 .sns-button:active {
   color: var(--red-color);
-	border-color: var(--red-color);
+  border-color: var(--red-color);
 }
 
 .sidebar .close-button {
@@ -231,6 +231,82 @@ button {
   font-size: 20px;
   color: var(--white-color);
   background-color: transparent;
+}
+
+/* main banner */
+.main-banner {
+  position: relative;
+  margin-top: 65px;
+}
+
+.main-banner .slide-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-banner .slide-item img {
+  width: 100%;
+}
+
+.main-banner .slide-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
+.item01-text-1,
+.item01-text-2 {
+  position: absolute;
+  right: 14%;
+}
+
+.main-banner .slide-item .item01-text-1 {
+  top: 25%;
+  width: 30%;
+  visibility: visible;
+  animation-duration: 1s;
+}
+
+.main-banner .slide-item .item01-text-2 {
+  top: 40%;
+  width: 40%;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+.item02-text-1,
+.item02-text-2 {
+  position: absolute;
+  left: 14%;
+}
+
+.main-banner .slide-item .item02-text-1 {
+  top: 25%;
+  width: 40%;
+}
+
+.main-banner .slide-item .item02-text-2 {
+  top: 45%;
+  width: 50%;
+}
+
+.main-banner .slide-button:active,
+.main-banner .slide-button:hover {
+  color: var(--white-color);
+}
+
+.main-banner .prev-button {
+  left: 8px;
+}
+
+.main-banner .next-button {
+  right: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -266,5 +342,24 @@ button {
   .sidebar .close-button {
     right: 36px;
     font-size: 26px;
+  }
+
+  /* main banner */
+  .main-banner {
+    margin-top: 80px;
+  }
+
+  .main-banner .slide-button {
+    width: 48px;
+    height: 48px;
+    font-size: 40px;
+  }
+
+  .main-banner .prev-button {
+    left: 16px;
+  }
+
+  .main-banner .next-button {
+    right: 16px;
   }
 }
