@@ -314,11 +314,11 @@ button {
   right: 8px;
 }
 
-/* new products */
+/* products slide */
 .product-slide {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 160px;
+  margin-bottom: 80px;
 }
 
 .product-slide .slide-list-wrap {
@@ -367,7 +367,7 @@ button {
 
 .slide-item img {
   width: 100%;
-	margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .slide-item .hover-image {
@@ -382,6 +382,10 @@ button {
   display: inline-block;
 }
 
+.slide-item:hover .textbox {
+  opacity: 0.7;
+}
+
 .slide-item .textbox a {
   display: flex;
   flex-direction: column;
@@ -389,20 +393,20 @@ button {
 }
 
 .textbox .hot {
-	margin-bottom: 8px;
-	font-size: 13px;
-	font-weight: 700;
-	color: var(--red-color);
-	text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--red-color);
+  text-transform: uppercase;
 }
 
 .textbox .item-title {
-	margin-bottom: 4px;
-	font-size: 14px;
+  margin-bottom: 4px;
+  font-size: 14px;
 }
 
 .textbox .item-price {
-	font-size: 13px;
+  font-size: 13px;
 }
 
 @media screen and (min-width: 768px) {
@@ -457,5 +461,26 @@ button {
 
   .main-banner .next-button {
     right: 16px;
+  }
+
+  /* product slide */
+  .product-slide-title {
+    margin-bottom: 48px;
+    font-size: 36px;
+  }
+
+  .product-slide .prev-button {
+    left: -48px;
+  }
+
+  .product-slide .next-button {
+    right: -48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-banner,
+  .product-slide {
+    margin-bottom: 160px;
   }
 }
