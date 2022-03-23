@@ -368,6 +368,7 @@ button {
 .slide-item img {
   width: 100%;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .slide-item .hover-image {
@@ -407,6 +408,50 @@ button {
 
 .textbox .item-price {
   font-size: 13px;
+}
+
+/* ad */
+.ad {
+  position: relative;
+  height: 360px;
+  margin-bottom: 80px;
+  background: url(../assets/img/ad01.png) no-repeat center fixed;
+}
+
+.ad-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.ad .ad-title,
+.ad .ad-caption {
+  font-family: 'Cafe24Ohsquare';
+  color: var(--white-color);
+}
+
+.ad-title {
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+
+.ad-caption {
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.ad-go {
+  padding: 4px 8px;
+  font-weight: 700;
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+}
+
+.ad-go:hover,
+.ad-go:active {
+  color: var(--black-color);
+  background-color: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -476,11 +521,34 @@ button {
   .product-slide .next-button {
     right: -48px;
   }
+
+  /* ad */
+  .ad {
+    height: 400px;
+  }
+
+  .ad-title {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+
+  .ad-caption {
+    margin-bottom: 36px;
+    font-size: 24px;
+  }
+
+  .ad-go {
+    padding: 4px 8px;
+    font-weight: 700;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .main-banner,
-  .product-slide {
+  .product-slide,
+  .ad {
     margin-bottom: 160px;
   }
 }
